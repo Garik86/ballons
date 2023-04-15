@@ -1,0 +1,16 @@
+.row{
+  background: rgb(176, 166, 166);
+  max-width: 114rem;
+  margin: 0 auto;
+  &:not(:last-child){
+    margin-bottom: 8rem;
+  }
+}
+.col-1-of-2{
+  &:not(:last-child){
+    margin-right: 6rem;
+  }
+  width: calc((100%-6rem)/2);
+  background: green;
+  float: left;
+}
