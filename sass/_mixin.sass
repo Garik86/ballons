@@ -3,4 +3,8 @@
   text-transform: uppercase
   color:$color-grey
   display: inline-block
-  
+@mixin  clearfix
+  &::after
+    content:""
+    display: table
+    clear: both
