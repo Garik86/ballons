@@ -1,5 +1,4 @@
 .row{
-  background: rgb(176, 166, 166);
   max-width: 114rem;
   margin: 0 auto;
   &:not(:last-child){
@@ -11,7 +10,6 @@
   &:not(:last-child){
     margin-right: 6rem;
   }
-  background: rgb(95, 176, 95);
   float: left;
 }
 
