@@ -29,8 +29,8 @@
   backface-visibility: hidden;
 }
 .title__two{
-  font-weight: 200;
-  font-size:  2.5rem; 
+  font-weight: 300;
+  font-size: clamp(1rem, 0.773rem + 1.14vw, 2.8rem); 
   line-height: 4.8rem;
   letter-spacing: 0.5rem;
   color:$color-grey-light;
@@ -52,7 +52,7 @@
     background:$btn-color-white;
     border-radius: 5rem;
     transition: all 0.2s;
-    font-size: clamp(1rem, 0.909rem + 0.45vw, 1.25rem);
+    font-size: clamp(1rem, 0.909rem + 0.45vw, 1.65rem);
   }
   &:visited{
     text-decoration: none;
@@ -63,7 +63,7 @@
     border-radius: 5rem;
     display: inline-block;
     transition: all 0.2s;
-    font-size: clamp(1rem, 0.909rem + 0.45vw, 1.25rem);
+    font-size: clamp(1rem, 0.909rem + 0.45vw, 1.65rem);
   }
   &:hover{
     transform: translateY(-3px);
