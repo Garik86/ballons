@@ -46,15 +46,16 @@
 }
 .btn{
   position: relative;
-  &:link{
+  &, &:link{
     @include style-link;
     padding: 1.5rem 4rem;
     background:$btn-color-white;
     border-radius: 5rem;
     transition: all 0.2s;
     font-size: clamp(1rem, 0.909rem + 0.45vw, 1.65rem);
+    border: none;
   }
-  &:visited{
+  &, &:visited{
     text-decoration: none;
     text-transform: uppercase;
     color:$color-grey;
@@ -64,6 +65,7 @@
     display: inline-block;
     transition: all 0.2s;
     font-size: clamp(1rem, 0.909rem + 0.45vw, 1.65rem);
+    border: none
   }
   &:hover{
     transform: translateY(-3px);
@@ -96,7 +98,17 @@
   animation-timing-function: ease;
   backface-visibility: hidden;
   animation-fill-mode: backwards;
-
+}
+.btn_brown{
+  &, &:link, &:visited{
+    background: $color-brown-dark;
+    color: $btn-color-white;
+  }
+  &:hover{
+    &::after{
+      background: $color-brown-dark;
+    }
+  } 
 }
 
 
