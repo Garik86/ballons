@@ -3,21 +3,23 @@
     display: none
   &__button
     background: $color-grey-light
-    height: 9rem
-    width: 9rem
+    height: 6rem
+    width: 6rem
     border-radius: 50%
     position: fixed
     right: 9rem
     top: 9rem
     z-index: 100
+    text-align: center
+    cursor: pointer
   &__background
-    width: 7rem
-    height: 7rem
+    width: 6rem
+    height: 6rem
     border-radius: 50%
     background: radial-gradient($color-brown-light, $color-brown-dark) 
     position: fixed
-    right: 10rem
-    top: 10rem
+    right: 9rem
+    top: 9rem
     z-index: 50
     transition: all .7s
   &__nav
@@ -26,7 +28,7 @@
     top: 0
     right: 0
     z-index: 80
-    transition: all .7s cubic-bezier(0.68, 0.6, 0.32, 1.6)
+    transition: all .4s cubic-bezier(0.68, 0.6, 0.32, 1.6)
     opacity: 0
     width: 0
   &__list
@@ -62,6 +64,37 @@
   &__toggle:checked ~ &__nav
     width: 100%
     opacity: 1
-
+  &__icon
+    position: relative
+    margin-top: 30px
+    &,
+    &::before,
+    &::after
+      width: 30px
+      height: 2.5px
+      background: $color-black
+      display: inline-block
+    &::before,
+    &::after
+      content:""
+      position: absolute
+      left: 0
+      transition: all .2s
+    &::before
+      top: -8px
+    &::after
+      top: 8px
+  &__button:hover &__icon::before
+    top: -10px
+  &__button:hover &__icon::after
+    top: 10px
+  &__toggle:checked + &__button &__icon
+    background: transparent
+  &__toggle:checked + &__button &__icon::before
+    transform: rotate(135deg)
+    top: 0
+  &__toggle:checked + &__button &__icon::after
+    transform: rotate(-135deg)
+    top: 0
 
 
