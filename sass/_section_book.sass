@@ -8,11 +8,13 @@
   box-shadow: (0px .4rem .4rem rgba(0, 0, 0, 0.3 ))
   overflow: hidden
 .form
-  width: 60%
+  width: 70%
   padding-top: 1rem
   padding-left: 5rem
   &__group:not(:last-child)
     margin-bottom: 5rem
+    @include respond(tab-land)
+    margin-bottom: 4rem
   &__label
     font-size: 1.6rem
     font-weight: 400
@@ -51,6 +53,9 @@
     position: relative
     padding-left: 4rem
     padding-right: 2rem
+    @include respond(tab-land)
+    margin-bottom: 1rem
+    display: block
   &__button-radio
     height: 1.8rem
     width: 1.8rem

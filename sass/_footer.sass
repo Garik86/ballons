@@ -4,13 +4,17 @@
   &__logo
     width: 12rem
     padding-left: 50rem
+    @include respond(tab-land)
+      padding-left: 45%
   &__list
     list-style: none
     text-align: center
   &__item
     display: inline-block
     &:not(lust-child)
-      margin-right: 5rem      
+      margin-right: 5rem
+      @include respond(tab-land)
+        margin-right: 1rem  
   &__link
     &:link, &:visited
       text-decoration: none

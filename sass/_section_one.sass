@@ -5,7 +5,7 @@
   margin-bottom: 8rem
   padding-top: 3rem
   text-align: center
-  font-size: clamp(1rem, -0.091rem + 5.45vw, 4rem)
+  font-size: clamp(1rem, -0.091rem + 5.35vw, 4rem)
   letter-spacing: 1rem
   height: 43px
   text-transform: uppercase
@@ -15,6 +15,9 @@
   color: transparent
   transition: all .4s
   backface-visibility: hidden
+  @include respond(tab-land)
+    font-size: 3rem
+  
   &:hover
     transform: skewY(2deg) skewX(15deg) scale(1.1)
     text-shadow: 0rem 4rem 4rem rgba(black, .25)
