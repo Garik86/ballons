@@ -12,8 +12,16 @@
   transform: skewX(150deg)
   @include respond(tab-land)
     width: 65%
+  @include respond(tab-port)
+    width: 55%
+    transform: skewX(160deg)
   & > *
     transform: skewX(-150deg)
+    @include respond(tab-port)
+    transform: skewX(-160deg)
+  &__box
+    @include respond(tab-port)
+      letter-spacing: 0.15rem
   &__img
     width: 17rem
     height: 17rem
@@ -24,6 +32,9 @@
     -webkit-shape-outside: circle(50% at 50% 50%)
     overflow: hidden
     position: relative
+    @include respond(tab-port)
+    width: 12rem
+    height: 12rem
     img
       height: 100% 
       transform: scale(1.2)
