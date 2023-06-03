@@ -6,6 +6,9 @@
   @include respond(tab-port){
     height: 101vh;
   }
+  @include respond(phone){
+    height: 70rem;
+  }
 }
 .header__logo{
   width: 5.6rem;
