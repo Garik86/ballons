@@ -22,9 +22,9 @@ body{
   font-family: 'Roboto';
   font-weight: 400;
   color: rgb(119, 119,119);
-  font-size: 16px;
+  font-size: clamp(0.25rem, -0.023rem + 1.36vw, 1rem);
   letter-spacing: 2px;
-  padding: 50px;
+  padding: clamp(0.313rem, -0.71rem + 5.11vw, 3.125rem);
   background: white;
 }
 .container{
