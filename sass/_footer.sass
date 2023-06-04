@@ -16,7 +16,10 @@
     &:not(lust-child)
       margin-right: 5rem
       @include respond(tab-land)
-        margin-right: 1rem  
+        margin-right: 1rem
+      @include respond(tab-port)
+        margin: 0
+        padding: 2rem  
   &__link
     &:link, &:visited
       text-decoration: none
