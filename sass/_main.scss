@@ -27,7 +27,6 @@ body{
   padding: clamp(0.113rem, -0.71rem + 5.11vw, 3.125rem);
   background: white;
   @include respond(phone){
-    width: 100%;
     margin: 0;
     padding: 0;
   }
