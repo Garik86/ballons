@@ -24,8 +24,13 @@ body{
   color: rgb(119, 119,119);
   font-size: clamp(0.4rem, -0.023rem + 1.36vw, 1rem);
   letter-spacing: 2px;
-  padding: clamp(0.111rem, -0.71rem + 5.11vw, 3.125rem);
+  padding: clamp(0.113rem, -0.71rem + 5.11vw, 3.125rem);
   background: white;
+  @include respond(phone){
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 }
 .container{
   background-color:rgb(235, 233, 233);
