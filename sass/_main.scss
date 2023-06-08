@@ -11,7 +11,7 @@ html{
     font-size: 6px;
   }
   @include respond(phone){
-    font-size: 4px;
+    font-size: 5px;
   }
   @include respond(big-screen){
     font-size: 12px;
