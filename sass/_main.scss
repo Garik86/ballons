@@ -44,4 +44,9 @@ body{
 .margin_bottom_30px{
   margin-bottom: 2rem;
 }
+.title_secondary{
+  @include respond(phone){
+    margin-bottom: 4rem;
+  }
+}
 
