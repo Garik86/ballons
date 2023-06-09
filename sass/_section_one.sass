@@ -72,12 +72,24 @@
   &_n1
     top: 0
     left: 2rem
+    @include respond(phone)
+      top: 40rem
+      left: 2rem
+      width: 90%
   &_n2
     top: 2rem
     right: 0rem
+    @include respond(phone)
+      top: 20rem
+      width: 90%
+      left: 2rem
   &_n3
     top: 13rem
     left: 10rem
+    @include respond(phone)
+      top: 0rem
+      width: 90%
+      left: 2rem
   &:hover
     outline: .5rem solid $color-brown-light
     transform: scale(1.1)
