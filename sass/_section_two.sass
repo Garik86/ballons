@@ -7,7 +7,7 @@
   @include respond(tab-port)
     padding: 5rem
   @include respond(phone)
-      height: 110rem
+      height: 120rem
 .adventure-card
   padding: 2.5rem
   background-color: rgba($color-grey-light,.8 )
@@ -16,6 +16,9 @@
   text-align: center
   @include respond(tab-port)
     width: 90%
+  @include respond(phone)
+    width: 80%
+    text-align: center
   &:hover
     transform: translateY(-1.5rem) scale(1.03)
     transition: .2s all 
