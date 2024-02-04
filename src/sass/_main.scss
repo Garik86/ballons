@@ -1,0 +1,52 @@
+* ::after, ::before{
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 10px;
+  @include respond(tab-land){
+    font-size: 8px;
+  }
+  @include respond(tab-port){
+    font-size: 6px;
+  }
+  @include respond(phone){
+    font-size: 5px;
+  }
+  @include respond(big-screen){
+    font-size: 12px;
+  }
+}
+body{
+  box-sizing: border-box;
+  font-family: 'Roboto';
+  font-weight: 400;
+  color: rgb(119, 119,119);
+  font-size: clamp(0.5rem, -0.023rem + 1.36vw, 1rem);
+  letter-spacing: 2px;
+  padding: clamp(0.113rem, -0.71rem + 5.11vw, 3.125rem);
+  background: white;
+  @include respond(phone){
+    margin: 0;
+    padding: 0;
+  }
+}
+.container{
+  background-color:rgb(235, 233, 233);
+  width: 100%;
+  height: 527.5rem;
+  position: relative;
+  z-index: 0;
+}
+.text-align_center{
+  text-align:center;
+}
+.margin_bottom_30px{
+  margin-bottom: 2rem;
+}
+.title_secondary{
+  @include respond(phone){
+    margin-bottom: 4rem;
+  }
+}
+

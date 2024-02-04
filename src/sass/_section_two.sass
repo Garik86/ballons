@@ -1,0 +1,32 @@
+.section_two
+  padding: 21rem 
+  background: linear-gradient(90.05deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(1, 1, 1, 0.7) 99.94%), url(../images/Adventure.JPG) center/ cover no-repeat
+  transform: skewY(7deg)
+  & >*
+    transform: skewY(-7deg)
+  @include respond(tab-port)
+    padding: 5rem
+  @include respond(phone)
+      height: 120rem
+.adventure-card
+  padding: 2.5rem
+  background-color: rgba($color-grey-light,.8 )
+  border-radius: 0.5rem
+  box-shadow: (0px .4rem .4rem rgba(0, 0, 0, 0.3 ))
+  text-align: center
+  @include respond(tab-port)
+    width: 90%
+  @include respond(phone)
+    width: 80%
+    text-align: center
+  &:hover
+    transform: translateY(-1.5rem) scale(1.03)
+    transition: .2s all 
+  &__icon
+    font-size: clamp(1rem, -0.382rem + 6.91vw, 4.8rem)
+    background: linear-gradient(90.05deg,rgba(186, 133, 84, 1) 0.03%, rgba(161, 79, 3, 1) 99.94%)
+    -webkit-background-clip: text
+    color: transparent
+    display: inline-block
+    padding-bottom: 2.5rem
+
